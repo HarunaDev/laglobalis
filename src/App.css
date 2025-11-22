@@ -1,0 +1,8 @@
+/* In App.css */
+* {
+    box-sizing: border-box;
+  }
+  
+  section {
+    position: relative;
+  }

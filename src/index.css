@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply bg-[#242424] text-white relative overflow-hidden;
+    font-family: 'General Sans', sans-serif;
+    width: 100dvw;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+}
+  @font-face {
+    font-family: "circular-web";
+    src: url("/fonts/circularweb-book.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "general";
+    src: url("/fonts/general.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "robert-medium";
+    src: url("/fonts/robert-medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "robert-regular";
+    src: url("/fonts/robert-regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: "zentry";
+    src: url("/fonts/zentry-regular.woff2") format("woff2");
+  }
+}
+
+@layer utilities {
+  .animated-title {
+    @apply flex flex-col gap-1 text-2xl md:text-2xl lg:text-4xl font-bold leading-tight px-4 text-center;
+    font-family: 'General Sans', sans-serif;
+    color: #b0acac !important
+  }
+
+  .animated-word {
+    @apply opacity-0 inline-block mr-2 font-circular-web font-black  ;
+    transform: translate3d(0, 30px, 0);
+    transform-origin: 50% 50% -150px !important;
+    will-change: opacity, transform;
+  }
+}
