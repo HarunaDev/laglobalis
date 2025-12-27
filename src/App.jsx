@@ -63,6 +63,7 @@ import HowToLearn from "./components/HowToLearn";
 import Baked from "./components/Baked";
 import Cake from "./components/Cake";
 import Footer from "./components/Footer";
+import Pricing from "./components/Pricing";
 
 function App() {
   const [isHovered, setIsHovered] = useState(false);
@@ -90,6 +91,9 @@ function App() {
         </div>
         <div className="relative z-20">
         <HowToLearn />
+        </div>
+        <div className="relative z-20">
+        <Pricing />
         </div>
         <div className="relative z-20">
         <Baked />
