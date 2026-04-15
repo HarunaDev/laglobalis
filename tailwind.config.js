@@ -45,9 +45,11 @@ export default {
           200: "#E8DFF5"
         },
         customYellow: {
-          100: "#8e983f",
+          100: "#D4AF37",
           300: "#edff66",
         },
+        primaryColor: "#D4AF37",
+        secondaryColor: "#0A1128"
       },
     },
   },

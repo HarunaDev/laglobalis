@@ -54,57 +54,34 @@
 // export default App;
 
 
-import { useState } from "react";
+import { useState, type JSX } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Intro from "./components/Intro";
-import HowToLearn from "./components/HowToLearn";
-import Baked from "./components/Baked";
-import Cake from "./components/Cake";
-import Footer from "./components/Footer";
-import Pricing from "./components/Pricing";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import Header from "./components/Header.jsx";
+import Home from "./pages/home/Home.js";
+import Footer from "./components/Footer.js";
+import Header from "./components/Header.js";
+// import Footer from "./components/Footer.js";
 
-function App() {
-  const [isHovered, setIsHovered] = useState(false);
+
+function App(): JSX.Element {
+  const [isHovered, setIsHovered] = useState<boolean>(false);
 
   return (
     <>
-      <main className="relative">
-        <div
-          className={`h-0 w-[40rem] absolute top-[10%] right-[-1%] -rotate-[30deg] -z-10 ${
-            isHovered
-              ? "shadow-[0_0_900px_30px_#9B63E9]"
-              : "shadow-[0_0_900px_30px_#E99B63]"
-          }`}
-        />
-
-        <Header onContactHover={setIsHovered} />
-        
-
-        
-        <div className="relative z-10">
-        <Hero />
-        </div>
-        <div className="relative z-20">
-        <Intro />
-        </div>
-        <div className="relative z-20">
-        <HowToLearn />
-        </div>
-        <div className="relative z-20">
-        <Pricing />
-        </div>
-        <div className="relative z-20">
-        <Baked />
-        </div>
-        <div className="relative z-20">
-        <Cake />
-        </div>
-        <Footer />
-        
-        
+    <BrowserRouter>
+    <div className="min-h-screen flex flex-col">
+    <Header onContactHover={setIsHovered} />
+      <main className="flex-1">
+      <Routes>
+        <Route path="/" element={<Home isHovered={isHovered}/>}/>
+      </Routes>
       </main>
+      <Footer />
+    </div>
+      
+    </BrowserRouter>
+      
     </>
   );
 }

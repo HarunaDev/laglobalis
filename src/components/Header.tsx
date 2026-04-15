@@ -1,48 +1,3 @@
-// import React from 'react'
-// import 'boxicons/css/boxicons.min.css'
-
-// const Header = () => {
-//   const toggleMobileMenu = () => {
-//     const mobileMenu = document.getElementById('mobileMenu')
-
-//     if(mobileMenu.classList.contains('hidden')) {
-//       mobileMenu.classList.remove('hidden')
-//     } else {
-//       mobileMenu.classList.add('hidden')
-//     }
-//   }
-//   return (
-//     <header className='flex justify-between items-center py-4 px-4 lg:px-20'>
-//       <h1 className='text-3xl md:text-4xl lg:text-5xl font-light m-0 '>
-//           La Lumiere Globalise
-//       </h1>
-
-//       <nav className='hidden md:flex items-center gap-12'>
-//          <a href="text-base tracking-wider transition-colors hover:text-gray-300">Company</a>
-//         <a href="text-base tracking-wider transition-colors hover:text-gray-300">Freatures</a>
-//         <a href="text-base tracking-wider transition-colors hover:text-gray-300">Resources</a>
-//       </nav>
-
-//       {/* when they hover on this i want the text shadow in the other file to change */}
-//       <button className='hidden md:block bg-[#e99b63] text-black py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-violet-300 cursor-pointer z-50'>Contact</button>
-
-//       <button onClick={toggleMobileMenu} className='md:hidden text-3xl p-2 z-50'>
-//         <i class='bx bx-menu'></i>
-//       </button>
-
-//       <div id='mobileMenu' className='hidden fixed top-16 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur- md'>
-//         <nav className='flex flex-col gap-6 items-center'>
-//         <a href="text-base tracking-wider transition-colors hover:text-gray-300">Company</a>
-//         <a href="text-base tracking-wider transition-colors hover:text-gray-300">Freatures</a>
-//         <a href="text-base tracking-wider transition-colors hover:text-gray-300">Resources</a>
-//         </nav>
-//       </div>
-//     </header>
-//   )
-// }
-
-// export default Header
-
 import React, { useState, useEffect } from 'react'
 import 'boxicons/css/boxicons.min.css'
 
@@ -79,10 +34,11 @@ const Header = ({ onContactHover }) => {
   return (
     <header className={`flex fixed w-[100dvw] h-24 z-50 justify-between items-center py-4 px-4 lg:px-20 transition-all duration-300 ${
       isScrolled 
-        ? 'bg-black bg-opacity-70 backdrop-blur-md shadow-lg' 
+        ? 'bg-[#0A1128] bg-opacity-70 backdrop-blur-md shadow-lg' 
         : 'bg-transparent'
     }`}>
-      <img className='w-52 h-32' src="/img/laglobalislogo.png" alt="La Lumiere Globalise" />
+      <img className='w-20 h-20' src="src/assets/LaGlobalisLogo-gray.png" alt="La Lumiere Globalise" />
+      {/* <h1 className='text-[#D4AF37]'>La GlobalisLumiere</h1> */}
 
       <nav className='hidden md:flex items-center gap-12'>
         <a href="#About" className='text-base tracking-wider transition-colors hover:text-gray-300'>About</a>
@@ -91,7 +47,7 @@ const Header = ({ onContactHover }) => {
       </nav>
 
       <button 
-        className='hidden md:block bg-customOrange-300 text-white py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-customPurple-200 hover:text-[#2d2d2d] cursor-pointer z-50'
+        className='hidden md:block bg-[#D4AF37] text-white py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-customPurple-200 hover:text-[#2d2d2d] cursor-pointer z-50'
         onMouseEnter={() => onContactHover(true)}
         onMouseLeave={() => onContactHover(false)}
         onClick={() => window.open('mailto:lalumiereglobal@gmail.com')}

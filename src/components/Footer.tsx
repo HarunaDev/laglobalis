@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { type JSX } from 'react'
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-[#3F3D56] py-2'>
+    <footer className='bg-[#0A1128] py-2'>
         <small className='text-white text-center block'>
           laglobalislumiere | © {currentYear}
         </small>
