@@ -3,16 +3,17 @@ type Props = {
     subtitle: string;
     description: string;
     image: string;
+    className?: string;
   };
   
-  export default function DivisionCard({ title, subtitle, description, image }: Props) {
+  export default function DivisionCard({ title, subtitle, description, image, className = "" }: Props) {
     return (
-      <div className="relative h-[350px] rounded-xl overflow-hidden group cursor-pointer">
+      <div className={`relative h-[350px] rounded-xl overflow-hidden group cursor-pointer ${className}`}>
       
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-        style={{ backgroundImage: `url(${image})` }}
+        className="absolute inset-0 bg-white bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+        style={{ backgroundImage: `url(${image})`, backgroundSize: '50%', backgroundRepeat: 'no-repeat' }}
       />
 
       {/* Overlay */}
