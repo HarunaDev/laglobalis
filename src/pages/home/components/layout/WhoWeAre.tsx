@@ -1,42 +1,59 @@
+import logo from "@/assets/LaGlobalisLogo-gray.png";
+
 export default function WhoWeAre() {
   return (
-    <section id="who-we-are" className="pt-8 pb-20 bg-surface-container-low">
-      <div className="grid lg:grid-cols-2 gap-20 px-12 max-w-[1440px] mx-auto">
-        <img src="src/assets/LaGlobalisLogo-gray.png" className="rounded-xl" />
+    <section
+      id="who-we-are"
+      className="py-4 md:py-24 bg-surface-container-low px-6 md:px-12 lg:px-20"
+    >
+      <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-16 lg:gap-20 items-center">
+        
+        {/* Image */}
+        <div className="w-full">
+          <img
+            src={logo}
+            alt="La Globalis Logo"
+            className="w-full max-w-md mx-auto lg:mx-0 rounded-xl object-contain"
+          />
+        </div>
 
-        <div className="space-y-4">
-          <h2 className="text-5xl font-bold">
-            The Luminous <span className="text-primary italic">Curator</span>
+        {/* Text Content */}
+        <div className="space-y-5 text-center lg:text-left">
+          
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
+            The Luminous{" "}
+            <span className="text-primaryColor italic">Curator</span>
           </h2>
 
-          <p className="mt-6 text-secondary">
+          <p className="text-secondary text-base md:text-lg leading-relaxed">
             La Globalis Lumière Group is not merely a conglomerate...
           </p>
 
-          <p>
+          <p className="text-sm md:text-base leading-relaxed">
             We are a multi-sector lifestyle, education, and service brand
             committed to transforming lives through the gentle illumination of
             light — expressed in knowledge, experience, service, and impact.
           </p>
 
-          <p>
+          <p className="text-sm md:text-base leading-relaxed">
             We are builders of life experiences, carriers of light, and
             transformers of potential into reality.
           </p>
 
-          <p>
+          <p className="text-sm md:text-base leading-relaxed">
             Across every division, we curate environments where excellence is
             not just delivered but deeply felt—where every detail, from
             education to experience, is designed to inspire clarity, elevate
             standards, and awaken purpose.
           </p>
 
-          <p>
+          <p className="text-sm md:text-base leading-relaxed">
             Our mission is to bridge aspiration and reality, creating pathways
             where individuals and communities can thrive through intentional
             service, refined innovation, and the timeless power of illuminated
             thinking.
           </p>
+
         </div>
       </div>
     </section>

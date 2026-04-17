@@ -1,13 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import 'boxicons/css/boxicons.min.css'
 
-const Header = ({ onContactHover }) => {
+type HeaderProps = {
+  onContactHover: (state: boolean) => void;
+};
+
+const Header = ({ onContactHover }: HeaderProps) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
 
   const toggleMobileMenu = () => {
     const mobileMenu = document.getElementById('mobileMenu')
-    mobileMenu.classList.toggle('hidden')
+    if (mobileMenu) {
+      mobileMenu.classList.toggle('hidden');
+    }
   }
 
   useEffect(() => {
@@ -47,10 +53,10 @@ const Header = ({ onContactHover }) => {
       </nav>
 
       <button 
-        className='hidden md:block bg-[#D4AF37] text-white py-3 px-8 rounded-full border-none font-medium transition-all duration-500 hover:bg-customPurple-200 hover:text-[#2d2d2d] cursor-pointer z-50'
+        className='hidden md:block bg-[#D4AF37] text-secondaryColor py-3 px-8 rounded-lg border-none font-medium transition-all duration-500 hover:scale-95 hover:text-secondaryColor cursor-pointer z-50'
         onMouseEnter={() => onContactHover(true)}
         onMouseLeave={() => onContactHover(false)}
-        onClick={() => window.open('mailto:lalumiereglobal@gmail.com')}
+        onClick={() => window.open('mailto:contact@laglobalislumiere.com')}
       >
         Contact
       </button>

@@ -1,15 +1,21 @@
 import React, { type JSX } from 'react'
-import Hero from './components/layout/Hero.js'
-import WhoWeAre from './components/layout/WhoWeAre.js'
-import Divisions from './components/layout/Division.js'
-import Mission from './components/layout/Mission.js'
-import CTA from './components/layout/CTA.js'
+// import Hero from './components/layout/Hero.js'
+import WhoWeAre from './components/layout/WhoWeAre'
+import Divisions from './components/layout/Division'
+import Mission from './components/layout/Mission'
+import CTA from './components/layout/CTA'
+import Hero from './components/layout/Hero'
+// import Hero from './components/layout/Hero.js'
 
-export default function Home({isHovered}): JSX.Element {
+type Props = {
+  isHovered: boolean;
+}
+
+export default function Home({isHovered} : Props): JSX.Element {
   return (
     <main className="relative">
         <div
-          className={`h-0 w-[40rem] absolute top-[10%] right-[-1%] -rotate-[30deg] -z-10 ${
+          className={`h-0 w-[40rem] absolute lg:top-[10%] top-[3%] right-[2%] -rotate-[30deg] -z-10 ${
             isHovered
               ? "shadow-[0_0_900px_30px_#9B63E9]"
               : "shadow-[0_0_900px_30px_#E99B63]"
@@ -29,7 +35,7 @@ export default function Home({isHovered}): JSX.Element {
         <div className="relative z-20">
         <Divisions />
         </div>
-        <div className="relative z-2 px-20">
+        <div className="relative z-2">
         <Mission />
         </div>
         <div className="relative z-20">
