@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+#mission {
+  scroll-margin-top: 45px; /* adjust based on navbar height */
+}
 
 @layer base {
   body {

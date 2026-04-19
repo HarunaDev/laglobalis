@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import NotFound from "./components/NotFound";
 // import Footer from "./components/Footer.js";
 
 
@@ -19,6 +20,7 @@ function App(): JSX.Element {
       <main className="flex-1">
       <Routes>
         <Route path="/" element={<Home isHovered={isHovered}/>}/>
+        <Route path="*" element={<NotFound />} />
       </Routes>
       </main>
       <Footer />
