@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import 'boxicons/css/boxicons.min.css'
+import logo from "../assets/LaGlobalisLogo-gray.png"
 
 type HeaderProps = {
   onContactHover: (state: boolean) => void;
@@ -43,7 +44,7 @@ const Header = ({ onContactHover }: HeaderProps) => {
         ? 'bg-secondaryColor bg-opacity-70 backdrop-blur-md shadow-lg' 
         : 'bg-transparent'
     }`}>
-      <img className='w-20 h-20' src="src/assets/LaGlobalisLogo-gray.png" alt="La Lumiere Globalise" />
+      <img className='w-20 h-20' src={logo} alt="La Lumiere Globalise" />
       {/* <h1 className='text-[#D4AF37]'>La GlobalisLumiere</h1> */}
 
       <nav className='hidden md:flex items-center gap-12'>
