@@ -5,6 +5,7 @@ import Divisions from './components/layout/Division'
 import Mission from './components/layout/Mission'
 import CTA from './components/layout/CTA'
 import Hero from './components/layout/Hero'
+import AboutSection from './components/layout/Manifesto'
 // import Hero from './components/layout/Hero.js'
 
 type Props = {
@@ -34,6 +35,9 @@ export default function Home({isHovered} : Props): JSX.Element {
         </div>
         <div className="relative z-20">
         <Divisions />
+        </div>
+        <div className="relative z-20">
+        <AboutSection />
         </div>
         <div className="relative z-2">
         <Mission />

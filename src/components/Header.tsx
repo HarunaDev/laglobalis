@@ -48,8 +48,8 @@ const Header = ({ onContactHover }: HeaderProps) => {
       {/* <h1 className='text-[#D4AF37]'>La GlobalisLumiere</h1> */}
 
       <nav className='hidden md:flex items-center gap-12'>
-        <a href="#" className='text-base tracking-wider transition-colors hover:text-gray-300'>About</a>
-        <a href="#" className='text-base tracking-wider transition-colors hover:text-gray-300'>Learn</a>
+        <a href="/" className='text-base tracking-wider transition-colors hover:text-gray-300'>Home</a>
+        <a href="/academy" className='text-base tracking-wider transition-colors hover:text-gray-300'>Academy</a>
         <a href="#" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</a>
       </nav>
 
@@ -68,8 +68,8 @@ const Header = ({ onContactHover }: HeaderProps) => {
 
       <div id='mobileMenu' className='hidden fixed  top-0 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-secondaryColor bg-opacity-70 backdrop-blur-md h-screen'>
         <nav className='flex flex-col gap-6 items-center mt-12'>
-        <a href="#About" className='text-base tracking-wider transition-colors hover:text-gray-300'>About</a>
-        <a href="#Learn" className='text-base tracking-wider transition-colors hover:text-gray-300'>Learn</a>
+        <a href="/" className='text-base tracking-wider transition-colors hover:text-gray-300'>Home</a>
+        <a href="/academy" className='text-base tracking-wider transition-colors hover:text-gray-300'>Academy</a>
         <a href="#Shop" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</a>
         </nav>
       </div>
