@@ -13,7 +13,7 @@ html {
 @layer base {
   body {
     @apply bg-[#1A2340] text-white relative overflow-hidden;
-    font-family: 'General Sans', sans-serif;
+    font-family: 'Jost', 'General Sans', sans-serif;
     width: 100dvw;
     overflow-x: hidden;
     overflow-y: scroll;
