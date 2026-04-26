@@ -11,7 +11,7 @@ export default function Hero() {
           Ex Luce ad Vitam
         </h1>
 
-        <p className="mt-6 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+        <p className="mt-6 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed text-gray-400">
           Transforming the fabric of excellence through the curation of light, knowledge, and refined service.
         </p>
 

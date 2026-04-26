@@ -4,8 +4,8 @@ const Footer = (): JSX.Element => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className='bg-[#0A1128] py-2'>
-        <small className='text-white text-center block'>
+    <footer className='bg-secondarColor py-2'>
+        <small className='text-gray-400 text-center block'>
           laglobalislumiere | © {currentYear}
         </small>
     </footer>

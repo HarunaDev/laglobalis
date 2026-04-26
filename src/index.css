@@ -12,7 +12,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#0A1128] text-white relative overflow-hidden;
+    @apply bg-[#1A2340] text-white relative overflow-hidden;
     font-family: 'General Sans', sans-serif;
     width: 100dvw;
     overflow-x: hidden;

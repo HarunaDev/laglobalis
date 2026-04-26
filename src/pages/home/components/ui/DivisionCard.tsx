@@ -8,7 +8,7 @@ type Props = {
   
   export default function DivisionCard({ title, subtitle, description, image, className = "" }: Props) {
     return (
-      <div className={`relative h-[350px] rounded-xl overflow-hidden group cursor-pointer ${className}`}>
+      <div className={`relative h-[250px] rounded-xl overflow-hidden group cursor-pointer ${className}`}>
       
       {/* Background Image */}
       <div
@@ -21,7 +21,7 @@ type Props = {
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-end p-6">
-        <h3 className="text-2xl text-primaryColor font-bold">
+        <h3 className="text-2xl sm:text-3xl  text-primaryColor font-bold">
           {title}
         </h3>
 

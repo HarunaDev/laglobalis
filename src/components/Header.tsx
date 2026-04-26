@@ -54,7 +54,7 @@ const Header = ({ onContactHover }: HeaderProps) => {
       </nav>
 
       <button 
-        className='hidden md:block bg-[#D4AF37] text-secondaryColor py-3 px-8 rounded-lg border-none font-medium transition-all duration-500 hover:scale-95 hover:text-secondaryColor cursor-pointer z-50'
+        className='hidden md:block bg-[#D4AF37] text-secondaryColor py-3 px-8 rounded-lg border border-primaryColor font-medium transition-all duration-500 hover:scale-95 hover:text-primaryColor hover:bg-secondaryColor hover:border-primaryColor cursor-pointer z-50'
         onMouseEnter={() => onContactHover(true)}
         onMouseLeave={() => onContactHover(false)}
         onClick={() => window.open('mailto:contact@laglobalislumiere.com')}
@@ -66,8 +66,8 @@ const Header = ({ onContactHover }: HeaderProps) => {
         <i className='bx bx-menu'></i>
       </button>
 
-      <div id='mobileMenu' className='hidden fixed  top-0 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur-md'>
-        <nav className='flex flex-col gap-6 items-center'>
+      <div id='mobileMenu' className='hidden fixed  top-0 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-secondaryColor bg-opacity-70 backdrop-blur-md h-screen'>
+        <nav className='flex flex-col gap-6 items-center mt-12'>
         <a href="#About" className='text-base tracking-wider transition-colors hover:text-gray-300'>About</a>
         <a href="#Learn" className='text-base tracking-wider transition-colors hover:text-gray-300'>Learn</a>
         <a href="#Shop" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</a>
