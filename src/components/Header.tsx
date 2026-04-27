@@ -69,9 +69,9 @@ const Header = ({ onContactHover }: HeaderProps) => {
 
       <div id='mobileMenu' className='hidden fixed  top-0 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-secondaryColor bg-opacity-70 backdrop-blur-md h-screen'>
         <nav className='flex flex-col gap-6 items-center mt-12'>
-        <a href="/" className='text-base tracking-wider transition-colors hover:text-gray-300'>Home</a>
-        <a href="/academy" className='text-base tracking-wider transition-colors hover:text-gray-300'>Academy</a>
-        <a href="#Shop" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</a>
+        <Link to="/" className='text-base tracking-wider transition-colors hover:text-gray-300'>Home</Link>
+        <Link to="/academy" className='text-base tracking-wider transition-colors hover:text-gray-300'>Academy</Link>
+        <Link to="#" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</Link>
         </nav>
       </div>
     </header>

@@ -8,7 +8,8 @@ import Header from "./components/Header";
 import NotFound from "./components/NotFound";
 import Academy from "./pages/learn/Academy";
 // import Footer from "./components/Footer.js";
-
+import ScrollToHash from "./utils/ScrollTo";
+import ScrollToTop from "./utils/ScrollToTop";
 
 function App(): JSX.Element {
   const [isHovered, setIsHovered] = useState<boolean>(false);
@@ -16,6 +17,8 @@ function App(): JSX.Element {
   return (
     <>
     <BrowserRouter>
+    <ScrollToTop />
+    <ScrollToHash />
     <div className="min-h-screen flex flex-col">
     <Header onContactHover={setIsHovered} />
       <main className="flex-1">

@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero(): JSX.Element {
   return (
@@ -21,9 +22,9 @@ export default function Hero(): JSX.Element {
         <button className="bg-primaryColor text-white px-6 py-3 rounded-lg">
           Enroll Now
         </button>
-        <button className="border border-primaryColor px-6 py-3 rounded-lg">
+        <Link to="/academy#programs" className="border border-primaryColor px-6 py-3 rounded-lg">
           Explore Programs
-        </button>
+        </Link>
       </div>
     
     </section>
