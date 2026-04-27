@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import 'boxicons/css/boxicons.min.css'
 import logo from "../assets/LaGlobalisLogo-gray.png"
+import { Link } from 'react-router-dom';
 
 type HeaderProps = {
   onContactHover: (state: boolean) => void;
@@ -48,9 +49,9 @@ const Header = ({ onContactHover }: HeaderProps) => {
       {/* <h1 className='text-[#D4AF37]'>La GlobalisLumiere</h1> */}
 
       <nav className='hidden md:flex items-center gap-12'>
-        <a href="/" className='text-base tracking-wider transition-colors hover:text-gray-300'>Home</a>
-        <a href="/academy" className='text-base tracking-wider transition-colors hover:text-gray-300'>Academy</a>
-        <a href="#" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</a>
+        <Link to="/" className='text-base tracking-wider transition-colors hover:text-gray-300'>Home</Link>
+        <Link to="/academy" className='text-base tracking-wider transition-colors hover:text-gray-300'>Academy</Link>
+        <Link to="#" className='text-base tracking-wider transition-colors hover:text-gray-300'>Shop</Link>
       </nav>
 
       <button 

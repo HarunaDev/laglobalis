@@ -9,7 +9,7 @@ export default function Mission() {
         <h4 className="text-primaryColor text-sm md:text-lg font-bold mb-3">
           Our Philosophy
         </h4>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl leading-tight lg:w-[400px] md:w-[400px] w-[260px] mb-16">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl leading-tight lg:w-[400px] md:w-[400px] w-[260px] mb-16">
           The Four Pillars of{" "}
           <span className="text-primaryColor italic">Illumination</span>
         </h2>
