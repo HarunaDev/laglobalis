@@ -48,9 +48,10 @@ export default {
           100: "#D4AF37",
           300: "#edff66",
         },
-        primaryColor: "#D4AF37",
+        primaryColor: "#B8973A",
         secondaryColor: "#1A2340",
-        secondaryMid: "#243059"
+        secondaryMid: "#243059",
+        creamColor: "#FDF9F3",
       },
     },
   },

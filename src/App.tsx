@@ -21,7 +21,7 @@ function App(): JSX.Element {
       <main className="flex-1">
       <Routes>
         <Route path="/" element={<Home isHovered={isHovered}/>}/>
-        <Route path="/academy" element={<Academy />}/>
+        <Route path="/academy" element={<Academy isHovered={isHovered}/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
       </main>

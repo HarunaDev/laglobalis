@@ -1,5 +1,46 @@
-export default function Academy() {
+import About from "./components/layout/About";
+import Hero from "./components/layout/Hero";
+import HowItWorks from "./components/ui/HowItWorks";
+import Programs from "./components/layout/Program";
+import WhyChooseUs from "./components/ui/WhyChooseUs";
+import Intro from "./components/ui/Intro";
+import CTA from "../home/components/layout/CTA";
+
+type Props = {
+    isHovered: boolean;
+  }
+
+export default function Academy({isHovered} : Props) {
   return (
-    <div>Academy</div>
+    <main className="relative mt-24">
+        <div
+          className={`h-0 w-[40rem] absolute lg:top-[10%] top-[3%] right-[2%] -rotate-[30deg] -z-10 ${
+            isHovered
+              ? "shadow-[0_0_900px_30px_#453059]"
+              : "shadow-[0_0_900px_30px_#E99B63]"
+          }`}
+        />
+        <div className="relative z-10">
+        <Hero />
+        </div>
+        <div className="relative z-10">
+        <Intro />
+        </div>
+        <div className="relative z-10">
+        <About />
+        </div>
+        <div className="relative z-10">
+        <Programs />
+        </div>
+        <div className="relative z-10">
+        <WhyChooseUs />
+        </div>
+        <div className="relative z-10">
+        <HowItWorks />
+        </div>
+        <div className="relative z-10">
+        <CTA />
+        </div>
+    </main>
   )
 }
