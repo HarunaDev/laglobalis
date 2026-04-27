@@ -31,7 +31,7 @@ export default function NotFound() {
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.6 }}
-        className="mt-4 text-2xl md:text-3xl font-semibold text-gray-800"
+        className="mt-4 text-2xl md:text-3xl font-semibold text-creamColor"
       >
         Page Not Found
       </motion.h2>
