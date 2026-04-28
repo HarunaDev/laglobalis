@@ -9,7 +9,7 @@ export default function ScrollToHash() {
       const el = document.getElementById(hash.substring(1));
       if (el) {
         setTimeout(() => {
-          el.scrollIntoView({ behavior: "smooth" });
+          el.scrollIntoView({ behavior: "instant" });
         }, 0);
       }
     }

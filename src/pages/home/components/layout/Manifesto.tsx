@@ -61,7 +61,7 @@ export default function AboutSection(): JSX.Element {
       <header className="max-w-5xl mx-auto text-center">
         <h2
           id="about-heading"
-          className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight"
+          className="text-2xl sm:text-3xl md:text-4xl leading-tight"
         >
           From{" "}
           <span className="text-primaryColor italic">Purpose</span> to{" "}

@@ -38,7 +38,7 @@ export default function CTA() {
       }
   };
     return (
-      <section className="py-20 md:py-32 px-6 md:px-12 lg:px-20">
+      <section className="py-20 md:py-32 px-6 md:px-12 lg:px-20" id="cta">
         
         {/* Card Container */}
         <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 lg:p-16 text-center relative overflow-hidden">
@@ -50,7 +50,7 @@ export default function CTA() {
           <div className="relative z-10">
             
             {/* Heading */}
-            <h2 className="text-3xl sm:text-4xl md:text-5xl italic font-bold leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl italic leading-tight">
               Step into the{" "}
               <span className="text-primaryColor">Lumière</span>
             </h2>

@@ -18,7 +18,7 @@ export default function WhoWeAre() {
 
         {/* Text Content */}
         <div className="space-y-5 text-center lg:text-left">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl leading-tight">
             The Story Behind Our{" "}
             <span className="text-primaryColor italic">Purpose</span>
           </h2>

@@ -5,7 +5,7 @@ export default function About(): JSX.Element {
         <div className="mx-auto space-y-10">
   
           <div>
-            <h2 className="text-3xl font-bold">Who We Are</h2>
+            <h2 className="text-3xl ">Who We Are</h2>
             <p className="mt-4 text-gray-400 max-w-xl">
               A multi-sector learning institution combining education, language,
               skills, and personal development into one unified system.

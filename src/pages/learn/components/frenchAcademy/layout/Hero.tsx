@@ -1,4 +1,5 @@
 import type { JSX } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero(): JSX.Element {
   return (
@@ -14,7 +15,7 @@ export default function Hero(): JSX.Element {
         French Academy
       </h1>
 
-      <p className="italic text-gray-300 mt-4">
+      <p className="italic text-gray-300 mt-4 text-lg">
         Where Language Becomes Light
       </p>
 
@@ -23,13 +24,13 @@ export default function Hero(): JSX.Element {
       </p>
 
       <div className="flex gap-4 mt-8">
-        <button className="bg-primaryColor text-white px-6 py-3 rounded-lg hover:scale-95 transition-all">
+        <Link to="/academy/french#cta" className="bg-primaryColor text-white px-6 py-3 rounded-lg hover:scale-95 transition-all">
           Enroll Now
-        </button>
+        </Link>
 
-        <button className="border border-primaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all text-white">
+        <Link to="/academy/french#levels" className="border border-primaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all text-white">
           View Programmes
-        </button>
+        </Link>
       </div>
 
 </section>

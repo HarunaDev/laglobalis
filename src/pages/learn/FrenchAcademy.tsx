@@ -1,6 +1,9 @@
 import React from "react";
 import Hero from "./components/frenchAcademy/layout/Hero";
 import Welcome from "./components/frenchAcademy/layout/Welcome";
+import Levels from "./components/frenchAcademy/layout/Levels";
+import Exams from "./components/frenchAcademy/layout/Exams";
+import CTA from "../home/components/layout/CTA";
 type Props = {
   isHovered: boolean;
 };
@@ -22,6 +25,17 @@ export default function FrenchAcademy({ isHovered }: Props) {
       
       <div className="relative z-10">
         <Welcome />
+      </div>
+      
+      <div className="relative z-10">
+        <Levels />
+      </div>
+      
+      <div className="relative z-10">
+        <Exams />
+      </div>
+      <div className="relative z-10">
+        <CTA />
       </div>
     </main>
   );

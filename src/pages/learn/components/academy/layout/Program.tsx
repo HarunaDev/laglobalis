@@ -47,13 +47,13 @@ const programs: Program[] = [
   {
     title: "Exam Preparation",
     items: [
-      { label: "WAEC", href: "/academy/exams", isComingSoon: false },
-      { label: "JAMB", href: "/academy/exams", isComingSoon: false },
-      { label: "IGCSE", href: "/academy/exams", isComingSoon: false },
-      { label: "NECO", href: "/academy/exams", isComingSoon: false },
-      { label: "GCE", href: "/academy/exams", isComingSoon: false },
-      { label: "IGCSE", href: "/academy/exams", isComingSoon: false },
-      { label: "JUPEB", href: "/academy/exams", isComingSoon: false },
+      { label: "WAEC", href: "/academy/exams", isComingSoon: true },
+      { label: "JAMB", href: "/academy/exams", isComingSoon: true },
+      { label: "IGCSE", href: "/academy/exams", isComingSoon: true },
+      { label: "NECO", href: "/academy/exams", isComingSoon: true },
+      { label: "GCE", href: "/academy/exams", isComingSoon: true },
+      { label: "IGCSE", href: "/academy/exams", isComingSoon: true },
+      { label: "JUPEB", href: "/academy/exams", isComingSoon: true },
     ],
   },
   {
@@ -112,7 +112,7 @@ const programs: Program[] = [
 export default function Programs(): JSX.Element {
   return (
     <section className="py-16 px-6 md:px-20 " id="programs">
-      <h2 className="text-3xl font-bold text-center text-creamColor">
+      <h2 className="text-3xl text-center text-creamColor">
         Our Programs
       </h2>
 
@@ -120,7 +120,7 @@ export default function Programs(): JSX.Element {
         {programs.map((program) => (
           <div
             key={program.title}
-            className="p-6 rounded-xl border hover:shadow-md transition"
+            className="p-6 rounded-xl border border-primaryColor/40 hover:shadow-md transition"
           >
             <h3 className="font-semibold text-primaryColor">{program.title}</h3>
 
