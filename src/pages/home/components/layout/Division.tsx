@@ -14,7 +14,7 @@ export default function Divisions() {
 
       <h4 className="text-center text-lg mb-12">Through our divisions, we bring light into:</h4> */}
 
-<div className="text-center max-w-3xl mx-auto">
+      <div className="text-center max-w-3xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl mb-4 text-primaryColor font-bold">
           Our Core <span className=" italic text-white">Divisions</span>
         </h2>
@@ -56,7 +56,6 @@ export default function Divisions() {
           description="Cleanliness, hygiene, and care"
           image={clean}
         />
-        
       </div>
     </section>
   );

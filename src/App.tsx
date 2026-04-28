@@ -10,6 +10,7 @@ import Academy from "./pages/learn/Academy";
 // import Footer from "./components/Footer.js";
 import ScrollToHash from "./utils/ScrollTo";
 import ScrollToTop from "./utils/ScrollToTop";
+import FrenchAcademy from "./pages/learn/FrenchAcademy";
 
 function App(): JSX.Element {
   const [isHovered, setIsHovered] = useState<boolean>(false);
@@ -25,6 +26,7 @@ function App(): JSX.Element {
       <Routes>
         <Route path="/" element={<Home isHovered={isHovered}/>}/>
         <Route path="/academy" element={<Academy isHovered={isHovered}/>}/>
+        <Route path="/academy/french" element={<FrenchAcademy isHovered={isHovered}/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
       </main>

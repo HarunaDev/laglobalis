@@ -18,28 +18,28 @@ const programs: Program[] = [
     items: [
       {
         label: "French",
-        href: "/academy/languages/french",
+        href: "/academy/french",
         isComingSoon: false,
       },
       {
         label: "Spanish",
-        href: "/academy/languages/spanish",
+        href: "/academy/spanish",
         isComingSoon: true,
       },
       {
         label: "Chinese",
-        href: "/academy/languages/chinese",
+        href: "/academy/chinese",
         isComingSoon: true,
       },
-      { label: "Dutch", href: "/academy/languages/dutch", isComingSoon: true },
+      { label: "Dutch", href: "/academy/dutch", isComingSoon: true },
       {
         label: "Portuguese",
-        href: "/academy/languages/portuguese",
+        href: "/academy/portuguese",
         isComingSoon: true,
       },
       {
         label: "Italian",
-        href: "/academy/languages/italian",
+        href: "/academy/italian",
         isComingSoon: true,
       },
     ],

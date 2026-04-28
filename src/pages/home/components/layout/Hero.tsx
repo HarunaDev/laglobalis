@@ -16,10 +16,10 @@ export default function Hero() {
         </p>
 
         <div className="mt-10 flex gap-4 justify-center items-center">
-          <button className="bg-primaryColor text-secondaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all" onClick={() => navigate("/about")}>
+          <button className="bg-primaryColor text-white px-6 py-3 rounded-lg hover:scale-95 transition-all" onClick={() => navigate("/about")}>
             Explore
           </button>
-          <button className="border border-[#D4AF37] px-6 py-3 rounded-lg hover:scale-95 transition-all text-primaryColor" onClick={() => scrollToSection("divisions")}>
+          <button className="border border-primaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all text-white" onClick={() => scrollToSection("divisions")}>
             Discover
           </button>
         </div>
