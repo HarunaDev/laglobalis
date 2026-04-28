@@ -1,9 +1,9 @@
-import About from "./components/layout/About";
-import Hero from "./components/layout/Hero";
-import HowItWorks from "./components/ui/HowItWorks";
-import Programs from "./components/layout/Program";
-import WhyChooseUs from "./components/ui/WhyChooseUs";
-import Intro from "./components/ui/Intro";
+import About from "./components/academy/layout/About";
+import Hero from "./components/academy/layout/Hero";
+import HowItWorks from "./components/academy/ui/HowItWorks";
+import Programs from "./components/academy/layout/Program";
+import WhyChooseUs from "./components/academy/ui/WhyChooseUs";
+import Intro from "./components/academy/ui/Intro";
 import CTA from "../home/components/layout/CTA";
 
 type Props = {

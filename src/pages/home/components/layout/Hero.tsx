@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <section className="min-h-[85%] md:min-h-[80dvh] lg:min-h-screen mt-24 md:mt-0 flex items-center justify-center text-center pt-20 px-8 md:px-12 lg:px-20 overflow-hidden">
       <div>
-        <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl text-primaryColor italic font-bold">
+        <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl text-primaryColor italic">
           Ex Luce ad Vitam
         </h1>
 
