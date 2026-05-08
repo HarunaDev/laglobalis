@@ -12,8 +12,8 @@ type Props = {
       
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-white bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
-        style={{ backgroundImage: `url(${image})`, backgroundSize: '50%', backgroundRepeat: 'no-repeat' }}
+        className="absolute inset-0 bg-white bg-cover bg-center transition-transform duration-700 h-full group-hover:scale-110"
+        style={{ backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
       />
 
       {/* Overlay */}

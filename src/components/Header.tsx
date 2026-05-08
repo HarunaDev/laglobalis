@@ -43,7 +43,7 @@ const Header = ({ onContactHover }: HeaderProps) => {
     `text-base tracking-wider transition-colors ${
       isActive
         ? "text-primaryColor"
-        : "text-gray-700 hover:text-primaryColor/40"
+        : "text-white hover:text-primaryColor/40"
     }`;
 
   return (

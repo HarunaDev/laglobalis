@@ -1,4 +1,4 @@
-import logo from "@/assets/LaGlobalisLogo-gray.png";
+import logo from "@/assets/la-lumiere-collage.png";
 
 export default function WhoWeAre() {
   return (
@@ -12,7 +12,7 @@ export default function WhoWeAre() {
           <img
             src={logo}
             alt="La Globalis Logo"
-            className="w-full max-w-md mx-auto lg:mx-0 rounded-xl object-contain"
+            className="w-[600px] max-w-md mx-auto lg:mx-0 rounded-xl object-contain"
           />
         </div>
 

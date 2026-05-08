@@ -1,9 +1,9 @@
 import DivisionCard from "../ui/DivisionCard";
-import academy from "@/assets/academy.png";
-import table from "@/assets/table.png";
-import culture from "@/assets/culture.png";
-import movement from "@/assets/movement.png";
-import clean from "@/assets/clean.png";
+import academy from "@/assets/la-lumiere-learning.png";
+import table from "@/assets/la-lumiere-events.png";
+import culture from "@/assets/la-lumiere-culture.png";
+import movement from "@/assets/la-lumiere-logistics.png";
+import clean from "@/assets/la-lumiere-cleaning-2.png";
 
 export default function Divisions() {
   return (
