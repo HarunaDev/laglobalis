@@ -8,7 +8,7 @@ export default function ProgramCard({ program }: Props) {
 
     return (
 
-        <div className="border border-[#C8A44D]/40 rounded-sm overflow-hidden bg-[#111C2B]">
+        <div className="border border-[#C8A44D]/40 rounded-sm overflow-hidden bg-secondaryMid/40">
 
             <div className="p-8">
 
@@ -16,7 +16,7 @@ export default function ProgramCard({ program }: Props) {
                     {program.level}
                 </p>
 
-                <h2 className="text-5xl font-serif text-white mt-3">
+                <h2 className="text-4xl font-serif text-white mt-3">
                     {program.title}
                 </h2>
 
@@ -34,7 +34,7 @@ export default function ProgramCard({ program }: Props) {
 
                 <div className="flex items-end gap-2 mt-3">
 
-                    <h2 className="text-5xl text-[#D6B05B] font-bold">
+                    <h2 className="text-3xl text-[#D6B05B] font-bold">
                         ₦{program.investment.toLocaleString()}
                     </h2>
 

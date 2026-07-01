@@ -11,7 +11,7 @@ export default function ProgramOptions({
 
     return (
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid lg:grid-cols-2 gap-16">
 
             {programmes.map((program) => (
 
