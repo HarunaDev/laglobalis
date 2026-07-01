@@ -9,7 +9,7 @@ export default function Hero(): JSX.Element {
         Globalis Lumière Premier
       </p>
 
-      <h1 className="text-4xl md:text-6xl font-light leading-tight mt-4">
+      <h1 className="text-4xl md:text-6xl font-light leading-tight mt-4 font-serif">
         La <span className="italic text-[#D4AF5A]">Lumière</span>
         <br />
         French Academy
