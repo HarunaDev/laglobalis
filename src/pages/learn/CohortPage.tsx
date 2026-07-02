@@ -3,6 +3,7 @@ import Hero from "./components/cohort/layout/Hero";
 import SectionHeading from "./components/cohort/ui/SectionHeading";
 import ProgramOptions from "./components/cohort/layout/ProgramOptions";
 import { cohortData } from "../../data/cohortData";
+import InstallmentPlans from "./components/cohort/layout/InstallmentPlan";
 
 type Props = {
     isHovered: boolean;
@@ -33,11 +34,11 @@ function CohortPage({isHovered}: Props) {
 
     <section className="pb-20">
 
-        <SectionHeading title="Programme Options" />
-
         <ProgramOptions
             programmes={cohortData.programmes}
         />
+
+        <InstallmentPlans plans={cohortData.installmentPlans} />
 
     </section>
 

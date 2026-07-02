@@ -53,13 +53,166 @@ export const programmes: Program[] = [
     },
 ];
 
-export const installmentPlans: InstallmentPlan[] = [];
+export const installmentPlans: InstallmentPlan[] = [
+    {
+        id: "a1",
+        title: "A1 Cohort",
+        total: 280000,
 
-export const timeline: TimelineItem[] = [];
+        installments: [
+            {
+                title: "Installment 1",
+                due: "Before August (Registration)",
+                amount: 80000,
+            },
+            {
+                title: "Installment 2",
+                due: "Before September",
+                amount: 70000,
+            },
+            {
+                title: "Installment 3",
+                due: "Before November",
+                amount: 70000,
+            },
+            {
+                title: "Installment 4",
+                due: "Before January",
+                amount: 60000,
+            },
+        ],
+    },
 
-export const included: IncludedItem[] = [];
+    {
+        id: "a2",
+        title: "A2 Cohort",
+        total: 350000,
 
-export const policies: Policy[] = [];
+        installments: [
+            {
+                title: "Installment 1",
+                due: "Before August (Registration)",
+                amount: 100000,
+            },
+            {
+                title: "Installment 2",
+                due: "Before September",
+                amount: 90000,
+            },
+            {
+                title: "Installment 3",
+                due: "Before November",
+                amount: 90000,
+            },
+            {
+                title: "Installment 4",
+                due: "Before January",
+                amount: 70000,
+            },
+        ],
+    },
+];
+
+export const timeline: TimelineItem[] = [
+    {
+        month: "JULY",
+        title: "Registration Opens",
+    },
+    {
+        month: "AUG WK 1",
+        title: "Student Onboarding",
+    },
+    {
+        month: "AUG WK 2",
+        title: "Classes Begin",
+    },
+    {
+        month: "NOVEMBER",
+        title: "Midpoint Review",
+    },
+    {
+        month: "JANUARY",
+        title: "Cohort Completion",
+    },
+];
+
+export const included: IncludedItem[] = [
+    {
+        icon: "🎤",
+        title: "Live Classes",
+        description:
+            "3 sessions weekly via Microsoft Teams with speaking & pronunciation training.",
+    },
+
+    {
+        icon: "📚",
+        title: "Learning Hub",
+        description:
+            "Google Classroom access — notes, PDFs, recordings, quizzes & vocabulary.",
+    },
+
+    {
+        icon: "📝",
+        title: "12 Modules",
+        description:
+            "Structured curriculum covering full A1 or A2 completion.",
+    },
+
+    {
+        icon: "🎧",
+        title: "Audio Resources",
+        description:
+            "Exclusive listening materials created for each module.",
+    },
+
+    {
+        icon: "👥",
+        title: "Community",
+        description:
+            "WhatsApp support group for reminders, support & student connection.",
+    },
+
+    {
+        icon: "📖",
+        title: "Storybooks",
+        description:
+            "Academy storybooks available for purchase.",
+    },
+];
+
+export const policies: Policy[] = [
+    {
+        text: "First installment confirms your seat in the cohort.",
+    },
+
+    {
+        text: "All payments are non-refundable once made.",
+    },
+
+    {
+        text: "Subsequent installments are due before the stated month begins.",
+    },
+
+    {
+        text: "Students must commit to 3 hours of class weekly.",
+    },
+
+    {
+        text: "Slots are limited to a maximum of 10 students.",
+    },
+
+    {
+        text: "Missed classes are not deducted from fees.",
+    },
+
+    {
+        text: "Full upfront payment attracts a discounted rate.",
+    },
+
+    {
+        text: "Certificate issued upon cohort completion.",
+    },
+];
 
 export const cohortData = {
     academy: "LA GLOBALIS LUMIÈRE FRENCH ACADEMY",
