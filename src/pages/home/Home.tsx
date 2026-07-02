@@ -37,6 +37,12 @@ export default function Home({ isHovered }: Props): JSX.Element {
   };
 
   return (
+
+    <>
+
+{showPromo && (
+                <PromoModal onClose={closePromo} />
+            )}
     <main className="relative">
       <div
         className={`h-0 w-[40rem] absolute lg:top-[10%] top-[3%] right-[2%] -rotate-[30deg] -z-10 ${
@@ -47,7 +53,7 @@ export default function Home({ isHovered }: Props): JSX.Element {
       />
 
       <div className="relative z-10">
-        {showPromo && <PromoModal onClose={closePromo} />}
+        
         <Hero />
       </div>
       <div className="relative z-20">
@@ -68,5 +74,6 @@ export default function Home({ isHovered }: Props): JSX.Element {
       <div className="relative z-20">{/* <Cake /> */}</div>
       {/* <Footer /> */}
     </main>
+    </>
   );
 }

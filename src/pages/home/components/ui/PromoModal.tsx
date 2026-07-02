@@ -1,6 +1,8 @@
 import { X } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import img1 from "../../../../assets/modal.png"
+// import img2 from "../../../../assets/modal2.png"
 
 interface Props {
   onClose: () => void;
@@ -18,8 +20,8 @@ export default function PromoModal({ onClose }: Props) {
   }, []);
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-black/75 backdrop-blur-sm flex items-center justify-center p-5">
-      <div className="relative w-full max-w-5xl rounded-3xl overflow-hidden border border-[#B8973A] bg-[#1A2340] shadow-2xl">
+    <div className="fixed inset-0 z-[9999] bg-black/75 backdrop-blur-sm flex items-center justify-center p-5 overflow-y-auto">
+      <div className="relative w-full max-w-5xl max-h-[95vh] rounded-3xl overflow-hidden border border-[#B8973A] bg-[#1A2340] shadow-2xl">
         <div className="absolute -right-2 bottom-0 h-32 w-32 rounded-full bg-[#B8973A] flex items-center justify-center text-center text-[#1A2340] font-bold rotate-[-20deg] shadow-lg">
           Limited
           <br />
@@ -71,7 +73,7 @@ export default function PromoModal({ onClose }: Props) {
 
           <div className="bg-[#243059] flex items-center justify-center p-10">
             <img
-              src="/images/french-cohort.png"
+              src={img1}
               alt=""
               className="max-h-[500px]"
             />
