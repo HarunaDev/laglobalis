@@ -4,6 +4,8 @@ import SectionHeading from "./components/cohort/ui/SectionHeading";
 import ProgramOptions from "./components/cohort/layout/ProgramOptions";
 import { cohortData } from "../../data/cohortData";
 import InstallmentPlans from "./components/cohort/layout/InstallmentPlan";
+import Timeline from "./components/cohort/layout/Timeline";
+import IncludedSection from "./components/cohort/layout/IncludedSection";
 
 type Props = {
     isHovered: boolean;
@@ -39,6 +41,10 @@ function CohortPage({isHovered}: Props) {
         />
 
         <InstallmentPlans plans={cohortData.installmentPlans} />
+
+        <Timeline items={cohortData.timeline}/>
+
+        <IncludedSection items={cohortData.included}/>
 
     </section>
 
