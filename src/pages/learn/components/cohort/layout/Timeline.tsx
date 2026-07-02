@@ -21,7 +21,7 @@ export default function Timeline({ items }: Props) {
                         key={item.month}
                         className="text-center"
                     >
-                        <div className="w-5 h-5 rounded-full border-2 border-[#D6B05B] bg-[#091423] mx-auto"></div>
+                        <div className="w-5 h-5 rounded-full border-2 border-[#D6B05B] bg-secondaryColor/20 mx-auto"></div>
 
                         <h3 className="mt-4 text-[#D6B05B] font-bold uppercase text-sm">
                             {item.month}

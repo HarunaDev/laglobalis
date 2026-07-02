@@ -18,9 +18,10 @@ export default function Hero() {
           <Link to="/academy" className="bg-primaryColor text-white px-6 py-3 rounded-lg hover:scale-95 transition-all" >
             Explore
           </Link>
-          <button className="border border-primaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all text-white" onClick={() => scrollToSection("divisions")}>
+          {/* <button className="border border-primaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all text-white" onClick={() => scrollToSection("divisions")}>
             Discover
-          </button>
+          </button> */}
+          <Link to="/academy/french/cohort" className="border border-primaryColor px-6 py-3 rounded-lg hover:scale-95 transition-all text-white">Discover</Link>
         </div>
       </div>
     </section>
