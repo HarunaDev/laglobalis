@@ -62,12 +62,12 @@ export const installmentPlans: InstallmentPlan[] = [
         installments: [
             {
                 title: "Installment 1",
-                due: "Before August (Registration)",
+                due: "Before August/September (Registration)",
                 amount: 80000,
             },
             {
                 title: "Installment 2",
-                due: "Before September",
+                due: "Before October",
                 amount: 70000,
             },
             {
@@ -91,22 +91,22 @@ export const installmentPlans: InstallmentPlan[] = [
         installments: [
             {
                 title: "Installment 1",
-                due: "Before August (Registration)",
+                due: "Before September (Registration)",
                 amount: 100000,
             },
             {
                 title: "Installment 2",
-                due: "Before September",
+                due: "Before October",
                 amount: 90000,
             },
             {
                 title: "Installment 3",
-                due: "Before November",
+                due: "Before December",
                 amount: 90000,
             },
             {
                 title: "Installment 4",
-                due: "Before January",
+                due: "Before February",
                 amount: 70000,
             },
         ],
@@ -115,23 +115,23 @@ export const installmentPlans: InstallmentPlan[] = [
 
 export const timeline: TimelineItem[] = [
     {
-        month: "JULY",
+        month: "AUGUST",
         title: "Registration Opens",
     },
     {
-        month: "AUG WK 1",
+        month: "AUG WK 2",
         title: "Student Onboarding",
     },
     {
-        month: "AUG WK 2",
+        month: "SEP WK 2",
         title: "Classes Begin",
     },
     {
-        month: "NOVEMBER",
+        month: "DECEMBER",
         title: "Midpoint Review",
     },
     {
-        month: "JANUARY",
+        month: "FEBRUARY",
         title: "Cohort Completion",
     },
 ];
