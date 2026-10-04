@@ -75,7 +75,7 @@ const Header = ({ onContactHover }: HeaderProps) => {
         className='hidden md:block bg-primaryColor text-secondaryColor py-3 px-8 rounded-lg border border-primaryColor transition-all duration-500 hover:scale-95 hover:text-primaryColor hover:bg-secondaryColor hover:border-primaryColor cursor-pointer z-50'
         onMouseEnter={() => onContactHover(true)}
         onMouseLeave={() => onContactHover(false)}
-        onClick={() => window.open('mailto:contact@laglobalislumiere.com')}
+        onClick={() => window.open('mailto:laglobalislumiere@gmail.com')}
       >
         Contact
       </button>
